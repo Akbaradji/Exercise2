@@ -130,7 +130,10 @@ namespace Exercise2
                 case 3:
                     Console.WriteLine("exit.");
                     break;
-              
+                default:
+                    Console.WriteLine("error");
+                    break;
+
             }
     }
 }
