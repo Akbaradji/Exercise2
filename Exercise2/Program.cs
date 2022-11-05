@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -107,6 +108,25 @@ namespace Exercise2
             Console.WriteLine("2. AlgorithmHigh");
             Console.WriteLine("3. Exit");
             Console.WriteLine("Enter your choice (1,2,3) : ");
-        }
+            pilihanmenu = Convert.ToInt32(Console.ReadLine());
+            switch (pilihanmenu)
+            {
+                case 1:
+                    Console.WriteLine("");
+                    Console.WriteLine("----------------");
+                    Console.WriteLine("AlgorithmLow");
+                    Console.WriteLine("----------------");
+                    sortGPA.input();
+                    sortGPA.AlgorithmLow();
+                    break;
+                case 2:
+                    Console.WriteLine("");
+                    Console.WriteLine("----------------");
+                    Console.WriteLine("AlgorithmHigh");
+                    Console.WriteLine("----------------");
+                    sortGPA.input();
+                    sortGPA.AlgorithmLow
+                    break;
+            }
     }
 }
