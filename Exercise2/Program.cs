@@ -95,5 +95,18 @@ namespace Exercise2
                 ch =char.Parse(Console.ReadLine());
             } while ((ch == 'y') || (ch == 'Y'));
         }
+        static void Main(string[] args)
+        {
+            program sortGPA = new program();
+            int pilihanmenu;
+            char ch;
+
+            Console.WriteLine("Menu Optimal");
+            Console.WriteLine("================");
+            Console.WriteLine("1. AlgorithmLow");
+            Console.WriteLine("2. AlgorithmHigh");
+            Console.WriteLine("3. Exit");
+            Console.WriteLine("Enter your choice (1,2,3) : ");
+        }
     }
 }
