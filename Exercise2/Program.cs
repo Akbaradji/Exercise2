@@ -125,8 +125,12 @@ namespace Exercise2
                     Console.WriteLine("AlgorithmHigh");
                     Console.WriteLine("----------------");
                     sortGPA.input();
-                    sortGPA.AlgorithmLow
+                    sortGPA.AlgorithmLow();
                     break;
+                case 3:
+                    Console.WriteLine("exit.");
+                    break;
+              
             }
     }
 }
