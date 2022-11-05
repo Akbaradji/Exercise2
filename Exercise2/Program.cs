@@ -15,7 +15,7 @@ namespace Exercise2
 
         public void input()
         {
-            while(true)
+            while (true)
             {
                 Console.WriteLine("Enter the number of elements in the array: ");
                 string s = Console.ReadLine();
@@ -35,7 +35,7 @@ namespace Exercise2
                 string s1 = Console.ReadLine();
                 arr[i] = Int32.Parse(s1);
             }
-        } 
+        }
         public void AlgorithmLow()
         {
             char ch;
@@ -68,14 +68,14 @@ namespace Exercise2
                 Console.WriteLine("\nCountinue search (y/n):");
                 ch = char.Parse(Console.ReadLine());
 
-            } while ((ch == 'y') || (ch == 'Y'));     
+            } while ((ch == 'y') || (ch == 'Y'));
         }
         public void AlgorithHigh()
         {
             char ch;
             int ctr;
             do
-            {                
+            {
                 Console.Write("\nEnter the element you want to search: ");
                 int item = Convert.ToInt32(Console.ReadLine());
 
@@ -130,10 +130,8 @@ namespace Exercise2
                 case 3:
                     Console.WriteLine("exit.");
                     break;
-                default:
-                    Console.WriteLine("error");
-                    break;
 
             }
+        }
     }
 }
