@@ -24,6 +24,16 @@ namespace Exercise2
                 else
                     Console.WriteLine("\n Array should have minimum 1 and maximum 41 elements.\n");
             }
-        }
+            Console.WriteLine("");
+            Console.WriteLine("-------------");
+            Console.WriteLine(" Enter array elements");
+            Console.WriteLine("-------------");
+            for (i = 0; i < n; i++)
+            {
+                Console.WriteLine("<" + (i-1) + ">");
+                string s1 = Console.ReadLine();
+                arr[i] = Int32.Parse(s1);
+            }
+        }   
     }
 }
