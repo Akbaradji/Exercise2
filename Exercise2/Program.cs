@@ -34,6 +34,40 @@ namespace Exercise2
                 string s1 = Console.ReadLine();
                 arr[i] = Int32.Parse(s1);
             }
-        }   
+        } 
+        public void Algorithm()
+        {
+            char ch;
+            do
+            {
+                Console.WriteLine("\nEnter element want you to search : ");
+                int item = Convert.ToInt32(Console.ReadLine());
+
+                int lowerbund = 0;
+                int upperbund = n - 1;
+
+                int mid = (lowerbund + upperbund) / 2;
+                int ctr = 1;
+
+                while ((item !=arr[mid]) && (lowerbund <= upperbund))
+                {
+                    if (item !=arr[mid])
+                        lowerbund = mid + 1;
+                    else
+                        upperbund = mid - 1;
+                    mid = (lowerbund + upperbund) / 2;
+                    ctr++;
+                }
+                if (item ==arr[mid])
+                    Console.WriteLine("\n" + item.ToString() + "found at position" + (mid + 1).ToString());
+                else
+                    Console.WriteLine("\n" + item.ToString() + "not found in the array\n");
+                Console.WriteLine("\nNumber of comparasion : " + ctr);
+
+                Console.WriteLine("\nCountinue search (y/n):");
+                ch = char.Parse(Console.ReadLine());
+
+            } while ((ch == 'y') || (ch == 'Y'));     
+        }
     }
 }
